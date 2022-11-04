@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Nostrum Reality , Navi Mumbai, Ulve, Nostrum Reality provides best homes at best places.">
+    <link rel="icon" sizes="192x192" href="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg">
+  <link rel="shortcut icon" href="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg" type="image/png"/>
+  <link rel="apple-touch-icon" href="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg/v1/fill/w_32%2Ch_32%2Clg_1%2Cusm_0.66_1.00_0.01/868234_84b00506b8d043d8b57b0d3dab4f4ae6%7Emv2.jpeg" type="image/png"/>
+  <!-- Safari Pinned Tab Icon -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhaveshwar Constructions | Bhaveshwar Callista </title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../../Supports/CSS/index.css">
+    <link rel="stylesheet" href="../../Supports\CSS\home.css">
+    <link rel="stylesheet" href="../../Supports/CSS/productfilter.css">
+
+    <style>
+      * {
+        font-family: 'Oswald', sans-serif;
+      }
+  
+      .container {
+        /* margin: 30px; */
+        width: 100%;
+        max-width: 900px;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      }
+  
+      h5 {
+        text-transform: uppercase;
+        margin: 0;
+        font-size: 14px;
+      }
+  
+      ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+  
+      a {
+        text-decoration: none;
+        color: #bbb;
+      }
+  
+      .product-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* background: linear-gradient(to bottom, #6bffc8 0%, #42c8cb 100%); */
+        border-radius: 20px 20px 0 0;
+        padding: 55px 0;
+        width: 100%;
+        margin: auto;
+      }
+  
+      .product-pic {
+        max-width: 100%;
+        position: relative;
+        left: 0;
+        margin: 40px 0;
+        filter: drop-shadow(-6px 40px 23px rgba(0, 0, 0, 0.5));
+      }
+  
+      .product-details {
+        padding: 40px;
+        background-color: white;
+        border-radius: 0 0 20px 20px;
+      }
+  
+      .product-details .title {
+        text-transform: uppercase;
+        margin: 0;
+      }
+  
+      .product-details .colorCat {
+        text-transform: uppercase;
+        font-style: italic;
+        color: #bbb;
+        font-weight: 700;
+        font-size: 14px;
+      }
+  
+      .product-details .price {
+        font-weight: 700;
+        margin-top: 5px;
+        font-size: 18px;
+      }
+  
+      .product-details .price .current {
+        color: #fe6168;
+        margin-left: 6px;
+      }
+  
+      .product-details .before {
+        text-decoration: line-through;
+      }
+  
+      .product-details header {
+        margin-bottom: 50px;
+        position: relative;
+      }
+  
+      .product-details article>h5 {
+        margin: 0;
+      }
+  
+      .product-details article>p {
+        color: #bbb;
+        margin: 0.5em 0;
+        font-size: 14px;
+        line-height: 1.6;
+      }
+  
+      .product-details .controls {
+        margin: 3em 0;
+      }
+  
+      .product-details .controls>div {
+        flex: 1;
+      }
+  
+      .product-details .controls .option {
+        margin-top: 12px;
+        display: inline-block;
+        position: relative;
+      }
+  
+      .product-details .controls .option:hover {
+        color: #444444;
+      }
+  
+      .product-details .controls .option::before {
+        content: '';
+        position: absolute;
+        border-width: 2px 2px 0 0;
+        border-style: solid;
+        top: 0;
+        bottom: 0;
+        height: 5px;
+        width: 5px;
+        right: -18px;
+        margin: auto;
+        transform: rotate(135deg);
+      }
+  
+      .product-details .controls>div+div {
+        margin-top: 20px;
+        flex: none;
+      }
+  
+      .product-details .controls ul {
+        display: flex;
+        margin: 15px 5px;
+      }
+  
+      .product-details .color li+li {
+        margin-left: 15px;
+      }
+  
+      .product-details .colors {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        display: block;
+      }
+  
+      .product-details .color-bdot1 {
+        background-color: #59e8c8;
+      }
+  
+      .product-details .color-bdot1:hover,
+      .product-details .color-bdot1.active {
+        box-shadow: 0 0 0 3px white, 0 0 0 5px #59e8c8;
+      }
+  
+      .product-details .color-bdot2 {
+        background-color: #ffee71;
+      }
+  
+      .product-details .color-bdot2:hover,
+      .product-details .color-bdot2.active {
+        box-shadow: 0 0 0 3px white, 0 0 0 5px #ffee71;
+      }
+  
+      .product-details .color-bdot3 {
+        background-color: #6654af;
+      }
+  
+      .product-details .color-bdot3:hover,
+      .product-details .color-bdot3.active {
+        box-shadow: 0 0 0 3px white, 0 0 0 5px #6654af;
+      }
+  
+      .product-details .color-bdot4 {
+        background-color: #343434;
+      }
+  
+      .product-details .color-bdot4:hover,
+      .product-details .color-bdot4.active {
+        box-shadow: 0 0 0 3px white, 0 0 0 5px #343434;
+      }
+  
+      .product-details .color-bdot5 {
+        background-color: #dfdfdf;
+      }
+  
+      .product-details .color-bdot5:hover,
+      .product-details .color-bdot5.active {
+        box-shadow: 0 0 0 3px white, 0 0 0 5px #dfdfdf;
+      }
+  
+      .product-details .rate {
+        position: static;
+        margin-top: 10px;
+      }
+  
+      .product-details .rate a {
+        font-size: 18px;
+        color: #bbb;
+      }
+  
+      .product-details .rate a.active,
+      .product-details .rate a:hover {
+        color: #fe6067;
+      }
+  
+      .dots {
+        display: flex;
+        margin-top: 40px;
+      }
+  
+      .dots>a {
+        background-color: #349a98;
+        width: 10px;
+        height: 10px;
+        margin: 0 4px;
+        border-radius: 50%;
+      }
+  
+      .dots>a:hover,
+      .dots>a.active {
+        background-color: white;
+      }
+  
+      .dots i {
+        display: none;
+      }
+  
+      .footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+  
+      .footer>button {
+        display: flex;
+        border: 0;
+        padding: 15px 25px;
+        align-items: center;
+        border-radius: 7px;
+        cursor: pointer;
+        background: linear-gradient(to bottom, #ff886b 0%, #ff4164 100%);
+        box-shadow: 0 10px 30px 0 rgba(255, 136, 107, 0.7);
+        transition: 200ms;
+      }
+  
+      .footer>button:hover {
+        background: linear-gradient(to bottom, #ff4164 0%, #ff886b 100%);
+      }
+  
+      .footer>button>img {
+        width: 31px;
+      }
+  
+      .footer>button>span {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-weight: 700;
+        margin-left: 10px;
+        color: white;
+      }
+  
+      .footer>a img {
+        width: 24px;
+        opacity: 0.8;
+      }
+  
+      .footer>a:hover img {
+        opacity: 1;
+      }
+  
+      @media (min-width: 37.5em) {
+        .product-details .rate {
+          position: absolute;
+          top: 12px;
+          right: 10px;
+          margin-top: 0;
+        }
+  
+        .product-details .controls>div.qty {
+          width: 60px;
+        }
+  
+        .product-details .controls>div+div {
+          border-left: 2px solid rgba(187, 187, 187, 0.5);
+          padding-left: 25px;
+          padding-right: 25px;
+          width: 100px;
+          margin-top: 0;
+        }
+  
+        .product-details .controls {
+          display: flex;
+        }
+      }
+  
+      @media (min-width: 56.25em) {
+        .container {
+          display: flex;
+          flex-direction: row;
+          align-items: normal;
+          margin: auto;
+        }
+  
+        .product-image {
+          border-radius: 20px 0 0 20px;
+          max-width: 330px;
+        }
+  
+        .product-pic {
+          left: -40px;
+          max-width: 330px;
+        }
+  
+        .product-details {
+          width: 100%;
+          border-radius: 0 20px 20px 0;
+        }
+      }
+    </style>
+</head>
+<body>
+
+    <!--logo Portion Section-->
+    <nav class="container-fluid my-row-evenly grey-clr shadow">
+        <div  class="w-20 mob-nav">
+            <img src="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_67,h_67,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg" alt="WhatsApp Image 2022-08-18 at 15.04.44.jpeg" style="width:67px;height:67px;object-fit:cover" srcset="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_67,h_67,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg 1x, https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_134,h_134,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg 2x" />
+            <div class="nav-toogle mt-2">
+                <i class="fas fa-bars fa-2x nav-toogle-btn" onclick="toogleNav()"></i>
+           </div>
+        </div>
+
+        <ul class="ls-none my-row p-t d-hidden hide" id = "nav-item-list">
+          <li class="me-4"><a href="../../index.html" class="navbar-links">home</a></li>
+          <li class="me-4"><a href="../../pages/about.html" class="navbar-links">who we are</a></li>
+          <li class="me-4 corp-hover-showz"><div class="mob-align-corp"><a href="../../pages/clients.html" class="navbar-links pg-active">Our Clients </a><i class="fas fa-chevron-down corp-mob-hover" onclick="ShowCorpHover(event)"></i></div>
+            <div id="mob-corp-click" class="corp-hover">
+              <p><a href=".././surya.html" class="hvr-clr">Surya Constructions</a></p>
+              <p><a href="../bhaveshwar.html" class="hvr-clr">Bhaveshwar Constructions</a></p>
+            </div>
+          </li>
+          <li class="me-4"><a href="../../pages/contact.html" class="navbar-links">contact</a></li>
+      </ul>
+    </nav>
+    <!--logo Portion Section-->
+
+  <!--About Section-->
+  <div class="container">
+    <div class="product-image">
+      <img src="../../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR CALLISTA-min.jpg" alt="" class="product-pic">
+    </div>
+
+    <div class="product-details">
+      <header>
+        <h1 class="title">Bhaveshwar Callista</h1>
+      </header>
+      <article>
+        <h5>Description</h5>
+        <p>Location: Plot No 10A,10B & 10C, Sector 16E, Roadpali</p>
+        <p>Start Date: NA</p>
+        <p>Proposed Date Of Competion According To Rera: NA</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p>
+      </article>
+
+    </div>
+  </div>
+
+  </div>
+  <!--About Section-->
+
+
+
+   <!--FOOTER START-->
+   <footer class="clr-teal p-3">
+    <div class="text-center">
+      <img src="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_67,h_67,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg" alt="WhatsApp Image 2022-08-18 at 15.04.44.jpeg" style="width:67px;height:67px;object-fit:cover" srcset="https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_67,h_67,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg 1x, https://static.wixstatic.com/media/868234_84b00506b8d043d8b57b0d3dab4f4ae6~mv2.jpeg/v1/fill/w_134,h_134,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/WhatsApp%20Image%202022-08-18%20at%2015_04_44.jpeg 2x" width="75%">
+    </div>
+    
+    <div class="text-center">
+      <p><b>Nostrum Reality</b> – We Provide Exclusive And Best Demanding Courses, Real World Training & Industry Readiness Bootcamps<br/> For Your Career Building.</p>
+    </div>
+    
+    <div class="text-center">
+      <h3>Contact</h3>
+      <p><a href="mailto:nostrumreality@gmail.com" class="footer-links-link"><i class="far fa-envelope"></i> nostrumreality@gmail.com</a></p>
+      <p><i class="fas fa-phone"></i> <a href="tel:+919082107530" style="text-decoration: none; color: #fff;">9082107530</a></p>
+    </div>
+  </footer>
+
+  <section class="mt-1 last-nav">
+    <div class="">
+      <ul class="my-row ls-none">
+        <li class="f-icon fb-clr"><a href="https://www.facebook.com/nostrumreality" target="_" class="header-links"><i class="fab fa-facebook-f"></i></a></li>
+        <li class="f-icon g-clr"><a href="" class="header-links"><i class="fab fa-google"></i></a></li>
+        <li class="f-icon insta-clr"><a href="" class="header-links"><i class="fab fa-instagram"></i></a></li>
+        <li class="f-icon li-clr"><a href="https://www.linkedin.com/company/nostrumreality/" target="_" class="header-links"><i class="fab fa-linkedin-in"></i></a></li>
+    </ul>
+  </div>
+
+  <div><b>Copyright &copy; 2021 Nostrum Reality.</b></div>
+  </section>
+    <!--FOOTER END-->
+
+  
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="../../Supports/JS/index.js"></script>
+<script src="../../Supports/JS/productfilter.js"></script>
+</body>
+</html>
