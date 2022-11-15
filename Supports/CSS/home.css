@@ -8,6 +8,7 @@
     color: var(--clr-teal);
     font-size: 2.2rem;
     font-weight: bold;
+    text-align: center;
 }
 
 .clear-fxx{
@@ -175,6 +176,7 @@ nav{
 .pg-active{
     color: #18ba60;
     border: 2px solid #1dac5d;
+    border-radius: 5px;
     padding: 0.5em;
 }
 
@@ -1004,7 +1006,7 @@ footer > div{
 /*+++++++++++++++++++++++++++++++++ ABOUT PAGE START ++++++++++++++++++++++++++++++++++++*/
 .about-banner{
     margin-top: 0vmin;
-    background: url(../Images/AboutIcns/main.jpg);
+    background: url(../Images/AboutIcns/about-us-bg.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -1095,6 +1097,8 @@ footer > div{
     color: var(--clr-teal);
     font-size: 2rem;
     font-weight: bold;
+    text-align: center;
+    margin: 2.5rem;
 }
 
 .sub-clr-txt{
