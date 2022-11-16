@@ -8,7 +8,7 @@ body {
   font-family: Arial;
 }
 
-#myBtnContainer{
+#myBtnContainer {
   margin: 1rem;
 }
 
@@ -59,9 +59,14 @@ h1 {
   height: 49vh;
 }
 
-.content img{
+.brochure-content {
+  height: 56vh;
+}
+
+.content img {
   height: 35vh;
 }
+
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;
@@ -84,6 +89,22 @@ h1 {
   background-color: #666;
   color: white;
 }
+
+@media (max-width: 768px) {
+  .content {
+    height: 62vh;
+  }
+
+  .brochure-content {
+    height: 62vh;
+  }
+}
+
+/* @media (max-width:739) and(min-width: 425px) {
+  .content {
+    height: 70vh;
+  }
+} */
 
 @media (max-width: 425px) {
   .row {

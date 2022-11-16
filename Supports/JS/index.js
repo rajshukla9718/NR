@@ -194,5 +194,5 @@ function phoneCheck(e)
 function disappearLoader()
 {
   document.getElementById("loader").classList.add("vanish");
-  document.getElementById("body").classList.remove("vanish");
+  // document.getElementById("body").classList.remove("vanish");
 }
