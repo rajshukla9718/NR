@@ -58,6 +58,9 @@ h1 {
   padding: 10px;
 }
 
+.content img{
+  height: 35vh;
+}
 /* The "show" class is added to the filtered elements */
 .show {
   display: block;

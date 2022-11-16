@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -27,119 +28,7 @@
 
   <link rel="stylesheet" href="../Supports\CSS\index.css">
   <link rel="stylesheet" href="../Supports\CSS\home.css">
-  <!-- <link rel="stylesheet" href="../Supports/CSS/productfilter.css"> -->
-  <style>
-    * {
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        border: none;
-        outline: none;
-        font-family: "Poppins", sans-serif;
-    }
-    body{
-        background-color: #eeee;
-    }
-    .wrapper {
-        width: 95%;
-        margin: 0 auto;
-    }
-
-    #search-container {
-        margin: 1em 0;
-    }
-
-    #search-container input {
-        background-color: transparent;
-        width: 40%;
-        border-bottom: 2px solid #110f29;
-        padding: 1em 0.3em;
-    }
-
-    #search-container input:focus {
-        border-bottom-color: #6759ff;
-    }
-
-    #search-container button {
-        padding: 1em 2em;
-        margin-left: 1em;
-        background-color: #6759ff;
-        color: #ffffff;
-        border-radius: 5px;
-        margin-top: 0.5em;
-    }
-
-    .button-value {
-        border: 2px solid #6759ff;
-        padding: 1em 2.2em;
-        border-radius: 3em;
-        background-color: transparent;
-        color: #6759ff;
-        cursor: pointer;
-    }
-
-    .active {
-        background-color: #6759ff;
-        color: #ffffff;
-    }
-
-    #products {
-        display: grid;
-        grid-template-columns: auto auto auto;
-        grid-column-gap: 1.5em;
-        padding: 2em 0;
-    }
-
-    .card {
-        background-color: #ffffff;
-        max-width: 18em;
-        margin-top: 1em;
-        padding: 1em;
-        border-radius: 5px;
-        box-shadow: 1em 2em 2.5em rgba(1, 2, 68, 0.08);
-    }
-
-    .image-container {
-        text-align: center;
-    }
-
-    img {
-        max-width: 100%;
-        object-fit: contain;
-        height: 15em;
-    }
-
-    .container {
-        padding-top: 1em;
-        color: #110f29;
-    }
-
-    .container h5 {
-        font-weight: 500;
-    }
-
-    .hide {
-        display: none;
-    }
-
-    @media screen and (max-width: 720px) {
-        img {
-            max-width: 100%;
-            object-fit: contain;
-            height: 10em;
-        }
-
-        .card {
-            max-width: 10em;
-            margin-top: 1em;
-        }
-
-        #products {
-            grid-template-columns: auto auto;
-            grid-column-gap: 1em;
-        }
-    }
-</style>
+  <link rel="stylesheet" href="../Supports/CSS/productfilter.css">
 </head>
 
 <body>
@@ -173,28 +62,269 @@
   <!--logo Portion Section-->
 
   <!-- MAIN (Center website) -->
-  <div class="wrapper">
-    <div id="search-container" style="display: none;">
-        <input type="search" id="search-input" placeholder="Search product name here.." />
-        <button id="search">Search</button>
+  <div class="main">
+
+    <div id="myBtnContainer">
+      <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+      <button class="btn" onclick="filterSelection('existing')"> Existing</button>
+      <button class="btn" onclick="filterSelection('ongoing')"> Ongoing</button>
+      <button class="btn" onclick="filterSelection('upcoming')"> Upcoming</button>
     </div>
-    <div id="buttons">
-        <button class="button-value" onclick="filterProduct('all')">All</button>
-        <button class="button-value" onclick="filterProduct('Topwear')">
-            Topwear
-        </button>
-        <button class="button-value" onclick="filterProduct('Bottomwear')">
-            Bottomwear
-        </button>
-        <button class="button-value" onclick="filterProduct('Jacket')">
-            Jacket
-        </button>
-        <button class="button-value" onclick="filterProduct('Watch')">
-            Watch
-        </button>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="row">
+      <div class="column ongoing">
+
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR AQUA-min.jpg" alt="Mountains" style="width:100%">
+          <a href="../pages/bhaveshwar projects/bhaveshwar_aqua.html">
+            <h4 class="project-name">BHAVESHWAR AQUA </h4>
+          </a>
+          <p>Location: PLOT NO C7/1 & C7/2, SECTOR 12, KALAMBOLI</p>
+          <!-- <p>Start Date: 07-05-2022</p>
+        <p>Proposed Date Of Competion According To Rera: 31-12-2026</p>
+        <p>Date Of Completion According To Builder: 31-06-2025</p>
+        <p>Rera No: P52000045696</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR AVENUE (1)-min.jpg" alt="Lights"
+            style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Avenue</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_avenue.html">
+            <h4 class="project-name">BHAVESHWAR AVENUE </h4>
+          </a>
+          <p>Location: Plot No 34, Sector 5a, Karanjade</p>
+          <!-- <p>Start Date: 23-12-2015</p>
+        <p>Proposed Date Of Competion According To Rera: 29-07-2017</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: P52000045696</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR BELLEZA-min.jpg" alt="ongoing" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Belleza</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_belleza.html">
+            <h4 class="project-name">BHAVESHWAR BELLEZA </h4>
+          </a>
+          <p>Location: Plot No 34, Sector 5a, Karanjade</p>
+          <!-- <p>Start Date: 05-11-2018</p>
+        <p>Proposed Date Of Competion According To Rera: 12-11-2020</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: P52000018763</p> -->
+        </div>
+      </div>
+
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR BLISS-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Bliss</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_bliss.html">
+            <h4 class="project-name">BHAVESHWAR BLISS </h4>
+          </a>
+          <p>Location: Plot No 29, Sector 5a, Karanjade</p>
+          <!-- <p>Start Date: 18-12-2019</p>
+        <p>Proposed Date Of Competion According To Rera: 23-02-2022</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: P52000023954</p> -->
+        </div>
+      </div>
+      <div class="column upcoming">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR CALLISTA-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Callista</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_callista.html">
+            <h4 class="project-name">BHAVESHWAR CALLISTA </h4>
+          </a>
+          <p>Location: Plot No 10A,10B & 10C, Sector 16E, Roadpali</p>
+          <!-- <p>Start Date: NA</p>
+        <p>Proposed Date Of Competion According To Rera: NA</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR CORNER-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Corner</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_corner.html">
+            <h4 class="project-name">BHAVESHWAR CORNER </h4>
+          </a>
+          <p>Location: Plot No 34, Sector 5A, Karanjade</p>
+          <!-- <p>Start Date: 14-12-2016</p>
+        <p>Proposed Date Of Competion According To Rera: 05-04-2018</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: P52000006595</p> -->
+        </div>
+      </div>
+
+      <div class="column upcoming">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR ELITE-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Elite</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_elite.html">
+            <h4 class="project-name">BHAVESHWAR ELITE </h4>
+          </a>
+          <p>Location: Plot No 169, Sector 26, Ulwe</p>
+          <!-- <p>Start Date: NA</p>
+        <p>Proposed Date Of Competion According To Rera: NA</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column upcoming">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR FEATHER-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Feather</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_feather.html">
+            <h4 class="project-name">BHAVESHWAR FEATHER </h4>
+          </a>
+          <p>Location: Plot No C-16, Sector 15, Ulwe</p>
+          <!-- <p>Start Date: NA</p>
+        <p>Proposed Date Of Competion According To Rera: NA</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR OASIS-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Oasis</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_oasis.html">
+            <h4 class="project-name">BHAVESHWAR OASIS </h4>
+          </a>
+          <p>Location: Plot No 05, Sector 17, Ulwe</p>
+          <!-- <p>Start Date: 07-03-2022</p>
+        <p>Proposed Date Of Competion According To Rera: 31-12-2025</p>
+        <p>Date Of Completion According To Builder: 08-10-2023</p>
+        <p>Rera No: P52000034736</p> -->
+        </div>
+      </div>
+      
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR HILLS-min.jpg" alt="Lights" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Hills</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_hills.html">
+            <h4 class="project-name">BHAVESHWAR HILLS </h4>
+          </a>
+          <p>Location: Plot No 87, Sector 06, Karanjade</p>
+          <!-- <p>Start Date: 08-07-2014</p>
+        <p>Proposed Date Of Competion According To Rera: 30-03-2017</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/RAVECHI HEIGHT-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Ravechi Height</h4> -->
+          <a href="../pages/bhaveshwar projects/ravechi_height.html">
+            <h4 class="project-name">Ravechi HEIGHT </h4>
+          </a>
+          <p>Location: Plot No 69A, Sector 22, Kamothe</p>
+          <!-- <p>Start Date: 08-02-2019</p>
+        <p>Proposed Date Of Competion According To Rera: 29-12-2018</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: P52000019801</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR VILLA-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Villa</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_villa.html">
+            <h4 class="project-name">BHAVESHWAR VILLA </h4>
+          </a>
+          <p>Location: Plot No 55, Sector 5A, Karanjade</p>
+          <!-- <p>Start Date: 26-07-2013</p>
+        <p>Proposed Date Of Competion According To Rera: 28-04-2016</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR RUDRA(526+527-25A)-ULWE-min.jpg" alt="Car"
+            style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Rudra</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_rudra.html">
+            <h4 class="project-name">BHAVESHWAR RUDRA </h4>
+          </a>
+          <p>Location: Plot No 526 & 527, Sector 25A, Ulwe</p>
+          <!-- <p>Start Date: NA</p>
+        <p>Proposed Date Of Competion According To Rera: NA</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR PARK-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Park</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_park.html">
+            <h4 class="project-name">BHAVESHWAR PARK </h4>
+          </a>
+          <p>Location: Plot No 41, Sector 05, Karanjade</p>
+          <!-- <p>Start Date: 15-02-2013</p>
+        <p>Proposed Date Of Competion According To Rera: 24-07-2015</p>
+        <p>Date Of Completion According To Builder: NA</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR HEIGHT-min.jpg" alt="Lights" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Height</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_height.html">
+            <h4 class="project-name">BHAVESHWAR HEIGHT </h4>
+          </a>
+          <p>Location: Plot No 87, Sector 06, Karanjade</p>
+          <!-- <p>Start Date: 08-07-2014</p>
+        <p>Proposed Date Of Competion According To Rera: 30-03-2017</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: NA</p> -->
+        </div>
+      </div>
+      
+      <div class="column upcoming">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR MANSION (1)-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Mansion</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_mansion.html">
+            <h4 class="project-name">BHAVESHWAR MANSION </h4>
+          </a>
+          <p>Location: Plot No 51, Sector 5A, Karanjade</p>
+          <!-- <p>Start Date: 27-12-2017</p>
+      <p>Proposed Date Of Competion According To Rera: 29-12-2018</p>
+      <p>Date Of Completion According To Builder: Completed</p>
+      <p>Rera No: P52000015135</p> -->
+        </div>
+      </div>
+
+      <div class="column existing">
+        <div class="content">
+          <img src="../Supports/Bhaveshwar Project/IMAGES/BHAVESHWAR ICON-min.jpg" alt="Car" style="width:100%">
+          <!-- <h4 class="project-name">Bhaveshwar Icon</h4> -->
+          <a href="../pages/bhaveshwar projects/bhaveshwar_icon.html">
+            <h4 class="project-name">BHAVESHWAR ICON </h4>
+          </a>
+          <p>Location: Plot No 88, Sector 06, Karanjade</p>
+          <!-- <p>Start Date: 27-04-2018</p>
+        <p>Proposed Date Of Competion According To Rera: 15-10-2020</p>
+        <p>Date Of Completion According To Builder: Completed</p>
+        <p>Rera No: P52000016681</p>
+      </div> -->
+        </div>
+
+        <!-- END GRID -->
+      </div>
+
+      <!-- END MAIN -->
     </div>
-    <div id="products"></div>
-</div>
+  </div>
 
 
   <!--FOOTER START-->
@@ -238,146 +368,51 @@
   </section>
   <!--FOOTER END-->
 
-  <script>
-    let products = {
-        data: [
-            {
-                productName: "Regular White T-Shirt",
-                category: "Topwear",
-                image: "Bhaveshwar Valencia.jpeg",
-            },
-            {
-                productName: "Beige Short Skirt",
-                category: "Bottomwear",
-                image: "Supports\Bhaveshwar Valencia.jpeg",
-            },
-            {
-                productName: "Sporty SmartWatch",
-                category: "Watch",
-                image: "1.jpg",
-            },
-            {
-                productName: "Basic Knitted Top",
-                category: "Topwear",
-                image: "2.jpg",
-            },
-            {
-                productName: "Black Leather Jacket",
-                category: "Jacket",
-                image: "3.jpg",
-            },
-            {
-                productName: "Stylish Pink Trousers",
-                category: "Bottomwear",
-                image: "pink-trousers.jpg",
-            },
-            {
-                productName: "Brown Men's Jacket",
-                category: "Jacket",
-                image: "brown-jacket.jpg",
-            },
-            {
-                productName: "Comfy Gray Pants",
-                category: "Bottomwear",
-                image: "comfy-gray-pants.jpg",
-            },
-        ],
-    };
 
-    for (let i of products.data) {
-        //Create Card
-        let card = document.createElement("div");
-        //Card should have category and should stay hidden initially
-        card.classList.add("card", i.category, "hide");
-        //image div
-        let imgContainer = document.createElement("div");
-        imgContainer.classList.add("image-container");
-        //img tag
-        let image = document.createElement("img");
-        image.setAttribute("src", i.image);
-        imgContainer.appendChild(image);
-        card.appendChild(imgContainer);
-        //container
-        let container = document.createElement("div");
-        container.classList.add("container");
-        //product name
-        let name = document.createElement("h5");
-        name.classList.add("product-name");
-        name.innerText = i.productName.toUpperCase();
-        container.appendChild(name);
-        //price
-        let price = document.createElement("h6");
-        // price.innerText = "$" + i.price;
-        container.appendChild(price);
-
-        card.appendChild(container);
-        document.getElementById("products").appendChild(card);
-    }
-
-    //parameter passed from button (Parameter same as category)
-    function filterProduct(value) {
-        //Button class code
-        let buttons = document.querySelectorAll(".button-value");
-        buttons.forEach((button) => {
-            //check if value equals innerText
-            if (value.toUpperCase() == button.innerText.toUpperCase()) {
-                button.classList.add("active");
-            } else {
-                button.classList.remove("active");
-            }
-        });
-
-        //select all cards
-        let elements = document.querySelectorAll(".card");
-        //loop through all cards
-        elements.forEach((element) => {
-            //display all cards on 'all' button click
-            if (value == "all") {
-                element.classList.remove("hide");
-            } else {
-                //Check if element contains category class
-                if (element.classList.contains(value)) {
-                    //display element based on category
-                    element.classList.remove("hide");
-                } else {
-                    //hide other elements
-                    element.classList.add("hide");
-                }
-            }
-        });
-    }
-
-    //Search button click
-    document.getElementById("search").addEventListener("click", () => {
-        //initializations
-        let searchInput = document.getElementById("search-input").value;
-        let elements = document.querySelectorAll(".product-name");
-        let cards = document.querySelectorAll(".card");
-
-        //loop through all elements
-        elements.forEach((element, index) => {
-            //check if text includes the search value
-            if (element.innerText.includes(searchInput.toUpperCase())) {
-                //display matching card
-                cards[index].classList.remove("hide");
-            } else {
-                //hide others
-                cards[index].classList.add("hide");
-            }
-        });
-    });
-
-    //Initially display all products
-    window.onload = () => {
-        filterProduct("all");
-    };
-</script>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
     crossorigin="anonymous"></script>
   <script src="../Supports/JS/index.js"></script>
-  <!-- <script src="../Supports/JS/productfilter.js"></script> -->
+  <script src="../Supports/JS/productfilter.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
 </body>
 
 </html>
